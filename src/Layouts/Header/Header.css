@@ -1,0 +1,7 @@
+
+@media only screen and (max-device-width: 640px) {
+    /* STYLES HERE */
+    .navbar-center-mobile{
+        display: none;
+    }
+}
