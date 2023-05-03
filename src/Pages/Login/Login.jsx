@@ -150,16 +150,9 @@ const Login = () => {
                         <div>
                             <button className='btn bg-blue-500 btn-ghost normal-case text-xl ml-2' onClick={()=>googleLoginHandler()}>Google Login</button>
                             <button className='btn bg-blue-500 btn-ghost normal-case text-xl ml-2' onClick={()=>githubLoginHandler()}>GitHub Login</button>
-                             
-
                         </div>
 
                     }
-                    // {user&&<div>
-                    //     <h3>name : {user.displayName}</h3>
-                    //     <p>email : {user.email}</p>
-                    //     <img src={user.photoURL} alt="" />
-                    // </div>}
                 </div>
             </div>
         </div>
