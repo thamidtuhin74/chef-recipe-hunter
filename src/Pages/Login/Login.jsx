@@ -98,11 +98,13 @@ const Login = () => {
     //handleResetPassword 
 
     const handleResetPassword = event =>{
+        // const email = event.target.email.value;
         const email = emailRef.current.value;//get the current email value using useRef hook
         if(!email){
             alert('Please Put Your Email!');
             return
         }
+        console.log(email);
         
         sendPasswordResetEmail(auth, email)
         .then(result=>{
@@ -129,14 +131,14 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="text" placeholder="email" name='email' className="input input-bordered" />
+                            <input type="text" placeholder="email" name='email' ref={emailRef}className="input input-bordered" />
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
                             <input type="password" placeholder="password" name='password' className="input input-bordered" />
                             <label className="label">
                                 <p>Not Registerd? <Link to={'/register'} className="label-text-alt link link-hover">PLease Register</Link></p>
-                                <a href="#" className="label-text-alt link link-hover"  onClick={handleResetPassword}>Forgot password?</a>
+                                <p className="label-text-alt link link-hover"  onClick={handleResetPassword}>Forgot password?</p>
                             </label>
                             <p className='text-warning'>{error}</p>
                             <p className='text-success'>{success}</p>
