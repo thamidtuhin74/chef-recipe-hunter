@@ -23,7 +23,7 @@ const Header = () => {
         }
     return (
         <div className='container mx-auto'>
-            <div className="navbar bg-base-100 flex align-middle">
+            <div className="navbar flex align-middle">
                 
                 <div className="navbar-start">
                     <a className="text-2xl font-extrabold" >Nipponshoku</a>
