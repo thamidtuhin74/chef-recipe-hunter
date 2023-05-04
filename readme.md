@@ -11,31 +11,18 @@ This is a website Food Recipe bases on different Chef;
 
 I'm using some technology / Language to build it
 
-##FrontEnd
-Markup : - ReactJs
-         - HTML
-         - CSS(Tailwind CSS)
-         - DaisyUI
-         - Toastify
+## FrontEnd
+* ReactJs
+* HTML
+* CSS(Tailwind CSS)
+* DaisyUI
+* Toastify
 
-##BackEND
-Markup : - Express Js
-         - Firebase Authentication 
+## BackEND
+* Express Js
+* Firebase Authentication 
 
 
 ## User Features:
 user can Login with email & password , Google ,Github account.
 User Can not Access the Chef Details without Login
-
-
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
--OR-
-
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
