@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import Main from "../Layouts/Main/Main";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import CardDetails from "../Components/CardDetails/CardDetails";
 
   const router = createBrowserRouter([
     {
@@ -24,6 +25,12 @@ import Register from "../Pages/Register/Register";
         {
             path: "/register",
             element: <Register></Register>
+        },
+        {
+            path: "/card-details/:chefID",
+            element: <CardDetails></CardDetails>,
+            loader: ({params})=> fetch(`https://chef-recipe-hunter-server-thamidtuhin74.vercel.app/chefs/${params.chefID}`)
+
         }
         
       ]

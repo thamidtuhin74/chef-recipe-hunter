@@ -1,9 +1,10 @@
 import React from 'react';
 import './ChefCard.css';
+import { Link } from 'react-router-dom';
 const ChefCard = ({chef}) => {
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card flex align-middle items-center bg-base-100 shadow-xl">
                 <figure className="card-img px-10 pt-10">
                     <img src={chef.img} alt="Shoes" className="mask mask-decagon" />
                 </figure>
@@ -14,25 +15,11 @@ const ChefCard = ({chef}) => {
                     <p><span className='font-bold'>Years Of Experience :</span> {chef.yearsOfExperience}</p>
 
                     <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <Link to={`/card-details/${chef.id}`}>
+                        <button className="btn btn-primary">View Recipes</button></Link>
                     </div>
                 </div>
             </div>
-            {/* <h2>{chef.name}</h2> */}
-            {/* <div className="card w-96 bg-base-100 shadow-xl">
-                <figure className="px-10 pt-10">
-                    <img src={chef.img} alt="Shoes" className="rounded-xl" />
-                </figure>
-                <div className="card-body items-center">
-                    <h2 className="card-title">{chef.name}!</h2>
-                    <p><span className='font-bold'>Number Of Recipes :</span> {chef.numberOfRecipes}</p>
-                    <p><span className='font-bold'>Years Of Experience :</span> {chef.yearsOfExperience}</p>
-
-                    <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                </div>
-            </div> */}
 
             
         </div>
