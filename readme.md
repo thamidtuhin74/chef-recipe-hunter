@@ -5,3 +5,24 @@
 # All chefs API link : https://chef-recipe-hunter-server-thamidtuhin74.vercel.app/chefs
 
 # single Chefs data link : https://chef-recipe-hunter-server-thamidtuhin74.vercel.app/chefs/:id
+
+
+This is a website Food Recipe bases on different Chef;
+
+I'm using some technology / Languge to build it
+
+#FrontEnd
+    - ReactJs
+    - HTML
+    - CSS(Tailwind CSS)
+    - DaisyUI
+    - Firebase
+
+#BackEND
+    - Express Js
+    - Firebase Authentication
+
+
+## User Features:
+user can Login with email & password , Google ,Github account.
+User Can not Access the Chef Details without Login
