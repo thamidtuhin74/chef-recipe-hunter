@@ -9,18 +9,18 @@
 
 This is a website Food Recipe bases on different Chef;
 
-I'm using some technology / Languge to build it
+I'm using some technology / Language to build it
 
 #FrontEnd
-    - ReactJs
-    - HTML
-    - CSS(Tailwind CSS)
-    - DaisyUI
-    - Firebase
+    * ReactJs
+    * HTML
+    * CSS(Tailwind CSS)
+    * DaisyUI
+    * Firebase
 
 #BackEND
-    - Express Js
-    - Firebase Authentication
+    * Express Js
+    * Firebase Authentication
 
 
 ## User Features:
