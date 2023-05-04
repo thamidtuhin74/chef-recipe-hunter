@@ -6,14 +6,16 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+console.log('env',import.meta.env.VITE_PASS);
 const firebaseConfig = {
-  apiKey: "AIzaSyAKsX5_h1GE4AzNhDdtzT-WzH9uWyt1MKI",
-  authDomain: "chef-recipe-hunter-8f8f7.firebaseapp.com",
-  projectId: "chef-recipe-hunter-8f8f7",
-  storageBucket: "chef-recipe-hunter-8f8f7.appspot.com",
-  messagingSenderId: "257612147547",
-  appId: "1:257612147547:web:b45330d70570af2aa6087e",
-  measurementId: "G-696XVNST1H"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
+  measurementId: import.meta.env.VITE_MEASUREMENTID
 };
 
 // Initialize Firebase
