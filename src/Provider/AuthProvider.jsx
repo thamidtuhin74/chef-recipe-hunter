@@ -24,7 +24,6 @@ const AuthProvider = ({children}) => {
     //GLobal SignIn
     const signIn = (email,password)=>{
         setLoading(true);
-        
         return signInWithEmailAndPassword(auth, email, password);
     }
 

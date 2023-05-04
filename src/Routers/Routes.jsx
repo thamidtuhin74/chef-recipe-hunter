@@ -8,6 +8,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import CardDetails from "../Components/CardDetails/CardDetails";
 import Blog from "../Pages/Blog/Blog";
+import PrivateRoute from "./PrivateRoute";
+import PageNotFound from "../Pages/PageNotFound";
 
   const router = createBrowserRouter([
     {
@@ -29,7 +31,7 @@ import Blog from "../Pages/Blog/Blog";
         },
         {
             path: "/card-details/:chefID",
-            element: <CardDetails></CardDetails>,
+            element: <PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
             loader: ({params})=> fetch(`https://chef-recipe-hunter-server-thamidtuhin74.vercel.app/chefs/${params.chefID}`)
 
         },
@@ -39,7 +41,7 @@ import Blog from "../Pages/Blog/Blog";
         },
         {
             path: "/*",
-            element: <p>Page Not Found</p>
+            element: <PageNotFound></PageNotFound>
         },
         
       ]
