@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 import profileImg from '../../../src/assets/react.svg';
@@ -6,6 +6,7 @@ import { AuthContext } from "../../Provider/authProvider";
 
 const Header = () => {
     // COntext API load
+    const [show, setShow] = useState(false)
 
     const {user, logout} = useContext(AuthContext);
     // console.log('header : ' + user.email);
@@ -70,8 +71,11 @@ const Header = () => {
                     {user?
                         <div className="userinfo flex items-center justify-center">
                             
-                            <p className='rounded-lg font-bold mr-3'>{user?.displayName}</p>
-                            <div className="border-none w-12 h-12">
+                            {
+                                show&&<p className='userEmail rounded-lg font-bold mr-3'>{user?.displayName}</p>
+                            }
+                            {/* <p className='userEmail rounded-lg font-bold mr-3'>{user?.displayName}</p> */}
+                            <div onMouseOver={()=>setShow(true)} onMouseOut={()=>setShow(false)} className="userImg border-none w-12 h-12">
                                 <img className='rounded-full' src={user.photoURL} alt="" />
                             </div>
                             {/* <Link onClick={logoutHandler} className="btn btn-ghost normal-case text-xl" to={'/register'}>Sign Out</Link> */}
