@@ -11,16 +11,16 @@ This is a website Food Recipe bases on different Chef;
 
 I'm using some technology / Language to build it
 
-#FrontEnd
-    * ReactJs
-    * HTML
-    * CSS(Tailwind CSS)
-    * DaisyUI
-    * Firebase
+##FrontEnd
+Markup : - ReactJs
+         - HTML
+         - CSS(Tailwind CSS)
+         - DaisyUI
+         - Toastify
 
-#BackEND
-    * Express Js
-    * Firebase Authentication
+##BackEND
+Markup : - Express Js
+         - Firebase Authentication 
 
 
 ## User Features:
