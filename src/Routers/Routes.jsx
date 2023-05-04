@@ -7,6 +7,7 @@ import Main from "../Layouts/Main/Main";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import CardDetails from "../Components/CardDetails/CardDetails";
+import Blog from "../Pages/Blog/Blog";
 
   const router = createBrowserRouter([
     {
@@ -31,7 +32,15 @@ import CardDetails from "../Components/CardDetails/CardDetails";
             element: <CardDetails></CardDetails>,
             loader: ({params})=> fetch(`https://chef-recipe-hunter-server-thamidtuhin74.vercel.app/chefs/${params.chefID}`)
 
-        }
+        },
+        {
+            path: "/blog",
+            element: <Blog></Blog>
+        },
+        {
+            path: "/*",
+            element: <p>Page Not Found</p>
+        },
         
       ]
     },

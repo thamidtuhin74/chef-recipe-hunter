@@ -29,13 +29,14 @@ const Header = () => {
                 <div className="navbar-start">
                     <a className="text-2xl font-extrabold" >Nipponshoku</a>
                 </div>
-                <div className="navbar-center sm:hidden">
+                <div className="navbar-end sm:hidden">
                     <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-36">
+                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-36 ">
                         <Link className="btn btn-ghost normal-case text-xl" to={'/'}>Home</Link>
+                        <Link className="btn btn-ghost normal-case text-xl" to={'/blog'}>Blog</Link>
                         {user?
                             
                             <Link onClick={logoutHandler} className="btn btn-ghost normal-case text-xl" to={'/'}>Sign Out</Link>
@@ -50,10 +51,12 @@ const Header = () => {
                     </ul>
                     </div>
                 </div>
-                <div className="navbar-center-mobile">
+                <div className=" navbar-end navbar-end-mobile">
 
                     <div className='flex flex-row space-x-2'>
                         <Link className="btn btn-ghost normal-case text-xl" to={'/'}>Home</Link>
+                        <Link className="btn btn-ghost normal-case text-xl" to={'/blog'}>Blog</Link>
+
                         
                         {user?
                             
@@ -66,15 +69,12 @@ const Header = () => {
                             </div>
                         }
                     </div>  
-                </div>
-                <div className="navbar-end">
                     {user?
                         <div className="userinfo flex items-center justify-center">
                             
                             {
                                 show&&<p className='userEmail rounded-lg font-bold mr-3'>{user?.displayName}</p>
                             }
-                            {/* <p className='userEmail rounded-lg font-bold mr-3'>{user?.displayName}</p> */}
                             <div onMouseOver={()=>setShow(true)} onMouseOut={()=>setShow(false)} className="userImg border-none w-12 h-12">
                                 <img className='rounded-full' src={user.photoURL} alt="" />
                             </div>
@@ -87,6 +87,24 @@ const Header = () => {
                         
                     }
                 </div>
+                {/* <div className="navbar-end">
+                    {user?
+                        <div className="userinfo flex items-center justify-center">
+                            
+                            {
+                                show&&<p className='userEmail rounded-lg font-bold mr-3'>{user?.displayName}</p>
+                            }
+                            <div onMouseOver={()=>setShow(true)} onMouseOut={()=>setShow(false)} className="userImg border-none w-12 h-12">
+                                <img className='rounded-full' src={user.photoURL} alt="" />
+                            </div>
+                        </div>
+                        :
+                        <button className="border-none w-12 h-12 rounded-full">
+                                <img src={profileImg} alt="" />
+                        </button>
+                        
+                    } 
+                </div> */}
                 </div>
         </div>
     );
