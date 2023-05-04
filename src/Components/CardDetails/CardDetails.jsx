@@ -1,15 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './CardDetails.css'
 import Recipe from '../Recipe/Recipe';
+import Toastify from 'toastify-js'
+import "toastify-js/src/toastify.css"
 
 const CardDetails = () => {
+    const [favourite, setFavourite] = useState(false);
+
     const chefDetails = useLoaderData();
     console.log(chefDetails);
 
     const {recipes}  = chefDetails;
 
-    console.log(recipes)
+    console.log(recipes);
+
+    const toastHandler = () =>{
+        setFavourite(true);
+        Toastify({
+
+            text: "You are Added this Chef in Your Favourite List",
+            className: "info",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            },
+            duration: 3000,
+            onClick: function(){}      
+            }).showToast();
+    }
 
     return (
         <div className="Container mx-auto bg-base-100">
@@ -30,8 +53,8 @@ const CardDetails = () => {
                         
 
                     </p>
-                    <Link to={`/card-details/${chefDetails.id}`}>
-                        <button className="btn btn-primary">Add To Fabourite</button>
+                    <Link>
+                        <button onClick={()=>toastHandler()} className={`btn btn-primary`} disabled={favourite} >Add To Fabourite</button>
                     </Link>
                     </div>
                 </div>
