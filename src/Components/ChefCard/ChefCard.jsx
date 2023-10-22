@@ -4,19 +4,21 @@ import { Link } from 'react-router-dom';
 const ChefCard = ({chef}) => {
     return (
         <div>
-            <div className="card md:w-[350px] flex align-middle items-center bg-base-100 shadow-xl">
-                <figure className="card-img px-10 pt-10">
-                    <img src={chef.img} alt="Shoes" className="mask mask-decagon" />
-                </figure>
-                <p id='likes'><span  className='text-primary font-extrabold text-xl text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>{chef.likes} </span>peoples likes him/her!</p>
-                <div className="card-body items-center">
-                    <h2 className="card-title text-3xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{chef.name}!</h2>
+            <div className="card w-full h-[400px] flex align-middle items-center bg-base-200 shadow-lg">
+                <div className=''>
+                    <figure className="w-[200px] h-[250px] pt-12 mask mask-decagon">
+                        <img src={chef.img}  alt="Shoes" className="w-full h-full" />
+                    </figure>
+                </div>
+                <p id='likes'><span  className='text-primary font-extrabold text-bold align-middle text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>{chef.likes} </span>peoples likes him/her!</p>
+                <div className="flex flex-col items-center align-middle">
+                    <h2 className="card-title md:text-3xl text-2xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{chef.name}!</h2>
                     <p><span className='font-bold'>Number Of Recipes :</span> {chef.numberOfRecipes}</p>
-                    <p><span className='font-bold'>Years Of Experience :</span> {chef.yearsOfExperience}</p>
+                    <p className=''><span className='font-bold '>Years Of Experience :</span> {chef.yearsOfExperience}</p>
 
-                    <div className="card-actions">
+                    <div className="card-actions mt-2">
                     <Link to={`/card-details/${chef.id}`}>
-                        <button className="btn btn-primary">View Recipes</button></Link>
+                        <button className="btn btn-primary btn-sm ">View Recipes</button></Link>
                     </div>
                 </div>
             </div>

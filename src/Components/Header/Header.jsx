@@ -23,11 +23,11 @@ const Header = () => {
 
         }
     return (
-        <div className='container mx-auto'>
-            <div className="navbar flex align-middle">
+        <div className='container mx-auto relative'>
+            <div className="navbar absolute z-10 flex align-middle text-red-500">
                 
                 <div className="navbar-start">
-                    <a className="text-2xl font-extrabold" >Nipponshoku</a>
+                    <a className="text-2xl btn btn-primary font-extrabold text-white" >Nipponshoku</a>
                 </div>
                 <div className="navbar-end sm:hidden">
                     <div className="dropdown">
