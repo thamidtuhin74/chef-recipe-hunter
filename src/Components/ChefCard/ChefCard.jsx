@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ChefCard = ({chef}) => {
     return (
         <div>
-            <div className="card flex align-middle items-center bg-base-100 shadow-xl">
+            <div className="card md:w-[350px] flex align-middle items-center bg-base-100 shadow-xl">
                 <figure className="card-img px-10 pt-10">
                     <img src={chef.img} alt="Shoes" className="mask mask-decagon" />
                 </figure>
