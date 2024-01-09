@@ -16,7 +16,7 @@ const ChefCard = ({chef}) => {
                     <span  className='text-primary font-extrabold text-bold align-middle text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> {chef.likes}</span>
                     <FaHeart className='w-6 h-6 text-red-600 mr-2'></FaHeart>
                 </p>
-                <div className="flex flex-col items-center align-middle">
+                <div className="flex flex-col items-center align-middle line-h">
                     <h2 className="card-title md:text-3xl text-2xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{chef.name}!</h2>
                     <p><span className='font-bold'>Number Of Recipes :</span> {chef.numberOfRecipes}</p>
                     <p className=''><span className='font-bold '>Years Of Experience :</span> {chef.yearsOfExperience}</p>

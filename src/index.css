@@ -12,3 +12,49 @@ p{
     word-break: break-all;
     white-space: normal;
 }
+
+.yellowBtn{
+    display: flex;
+    width: 225px;
+    height: 55px;
+    padding: 20px 31px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 33.991px;
+    background: #E6E600;
+    color: #007500;
+}
+.yellowBtn:hover{
+
+    color: #E6E600;
+    background: #007500;
+}
+
+.logo{
+    font-family: 'Oleo Script Swash Caps';
+}
+
+.heroTitle{
+    color: #E6E600;
+    font-family: 'Oleo Script Swash Caps';
+    font-size: 54.641px;
+    font-style: normal;
+    font-weight: 700;
+    align-items: center;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.title{
+    
+    height: 67.839px;
+    flex-shrink: 0;
+    color: #007500;
+    font-family: 'Oleo Script Swash Caps';
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
