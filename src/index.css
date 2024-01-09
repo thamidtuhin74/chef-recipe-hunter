@@ -31,6 +31,25 @@ p{
     background: #007500;
 }
 
+.smallYellowBtn{
+    display: flex;
+    width: 127.094px;
+    height: 40px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #E6E600;
+    color: #007500;
+}
+
+.smallYellowBtn:hover{
+
+    color: #E6E600;
+    background: #007500;
+}
+
 .logo{
     font-family: 'Oleo Script Swash Caps';
 }
@@ -61,7 +80,6 @@ p{
 
 .cardTitle{
     color: #007500;
-
     text-align: center;
     font-family: 'Oleo Script Swash Caps';
     font-size: 32px;
@@ -70,4 +88,9 @@ p{
     line-height: normal;
     text-transform: capitalize;
 
+}
+
+.card:hover{
+    background-color: aliceblue;
+    
 }

@@ -56,6 +56,7 @@ const Header = () => {
                     <div className='flex flex-row space-x-2 text-[#E6E600]'>
                         <Link className="btn btn-ghost normal-case text-xl" to={'/'}>Home</Link>
                         <Link className="btn btn-ghost normal-case text-xl" to={'/blog'}>Blog</Link>
+                        {/* <Link className="btn btn-ghost normal-case text-xl" to={'#popular-chefs'}>Popular Chefs</Link> */}
 
                         
                         {user?

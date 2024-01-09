@@ -26,13 +26,13 @@ const Home = () => {
             <div className="div">
                 {/* <AboutUs></AboutUs> */}
                 {/* <AboutUs></AboutUs> */}
-                <AboutUss></AboutUss>
+                {/* <AboutUss> */}
             </div>
 
             <div className='container mx-auto py-10'>
                 <div className='mt-[90vh] w-4/5 mx-auto text-center'>
                 
-                    <h2 className="md:text-5xl text-3xl font-bold pb-10 title ">Popular Chefs</h2>
+                    <h2 className="md:text-5xl text-3xl font-bold mb-10 title ">Popular Chefs</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-8  ">
                         

@@ -43,7 +43,7 @@ const CardDetails = () => {
                     <img src={chefDetails.img} alt="Shoes" className="mask mask-decagon h-116" />
                     <div>
                         {/* Gradient Text */}
-                    <h1 className="text-5xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{chefDetails.name}!</h1>
+                    <h1 className="text-5xl font-bold heroTitle">{chefDetails.name}!</h1>
                     <h3 className="text-2xl font-bold my-5 text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{chefDetails.likes} Peopele Likes His/her Recipes!</h3>
 
                     <p className="py-6">

@@ -6,14 +6,14 @@ import { FaHeart } from "react-icons/fa";
 const ChefCard = ({chef}) => {
     return (
         <div>
-            <div className="card w-full h-[400px] flex align-middle items-center bg-base-200 shadow-lg">
+            <div className="card w-full h-[420px] flex align-middle items-center bg-base-200 shadow-lg ">
                 <div className=''>
                     <figure className="w-[200px] h-[250px] pt-12 mask mask-decagon">
                         <img src={chef.img}  alt="Shoes" className="w-full h-full" />
                     </figure>
                 </div>
-                <p id='likes' className='flex flex-row-reverse'>
-                    <span  className='text-primary font-extrabold text-bold align-middle text-transparent  bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'> {chef.likes}</span>
+                <p id='likes' className='flex flex-row-reverse text-[#E6E600]'>
+                    <span  className='text-primary font-extrabold text-bold align-middle text-transparent !text-[#E6E600]'> {chef.likes}</span>
                     <FaHeart className='w-6 h-6 text-red-600 mr-2'></FaHeart>
                 </p>
                 <div className="flex flex-col items-center align-middle line-h">
@@ -23,7 +23,7 @@ const ChefCard = ({chef}) => {
 
                     <div className="card-actions mt-2">
                     <Link to={`/card-details/${chef.id}`}>
-                        <button className="btn btn-primary btn-sm ">View Recipes</button></Link>
+                        <button className="btn smallYellowBtn">View Recipes</button></Link>
                     </div>
                 </div>
             </div>
