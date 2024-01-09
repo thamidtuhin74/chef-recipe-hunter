@@ -54,7 +54,7 @@ const CardDetails = () => {
 
                     </p>
                     <Link>
-                        <button onClick={()=>toastHandler()} className={`btn btn-primary`} disabled={favourite} >Add To Fabourite</button>
+                        <button onClick={()=>toastHandler()} className={`btn yellowBtn`} disabled={favourite} >Add To Fabourite</button>
                     </Link>
                     </div>
                 </div>

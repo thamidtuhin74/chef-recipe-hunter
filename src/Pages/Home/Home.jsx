@@ -2,6 +2,8 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ChefCard from '../../Components/ChefCard/ChefCard';
 import AboutUs from '../../Components/AboutUs/AboutUs';
+import AboutUss from '../../Components/AboutUs/AboutUss';
+// import AboutUs from '../../Components/AboutUs/AboutUs';
 
 const Home = () => {
 
@@ -23,7 +25,8 @@ const Home = () => {
 
             <div className="div">
                 {/* <AboutUs></AboutUs> */}
-                <AboutUs></AboutUs>
+                {/* <AboutUs></AboutUs> */}
+                <AboutUss></AboutUss>
             </div>
 
             <div className='container mx-auto py-10'>

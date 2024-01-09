@@ -23,7 +23,7 @@ const Header = () => {
 
         }
     return (
-        <div className='container mx-auto relative'>
+        <div className='container mx-auto relative w-[1200px]'>
             <div className="navbar absolute z-10 flex align-middle text-red-500">
                 
                 <div className="navbar-start">
@@ -73,7 +73,7 @@ const Header = () => {
                         <div className="userinfo flex items-center justify-center">
                             
                             {
-                                show&&<p className='userEmail rounded-lg font-bold mr-3'>{user?.displayName}</p>
+                                show&&<p className='userEmail rounded-lg font-bold mr-3 text-[#E6E600]'>{user?.displayName}</p>
                             }
                             <div onMouseOver={()=>setShow(true)} onMouseOut={()=>setShow(false)} className="userImg border-none w-12 h-12">
                                 <img className='rounded-full' src={user.photoURL} alt="" />

@@ -37,7 +37,7 @@ const Recipe = ({recipe}) => {
                     <p>{recipe.cookingMethod.length}</p>
                 </td>
                 <th>
-                    <label htmlFor="my-modal-6" className="btn btn-primary">View Details</label>
+                    <label htmlFor="my-modal-6" className="btn yellowBtn">View Details</label>
 
                     {/* Put this part before </body> tag */}
                     <input type="checkbox" id="my-modal-6" className="modal-toggle" />

@@ -58,3 +58,16 @@ p{
     line-height: normal;
     text-transform: capitalize;
 }
+
+.cardTitle{
+    color: #007500;
+
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
