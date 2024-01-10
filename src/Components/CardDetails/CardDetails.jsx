@@ -4,10 +4,9 @@ import './CardDetails.css'
 import Recipe from '../Recipe/Recipe';
 import Toastify from 'toastify-js'
 import "toastify-js/src/toastify.css"
-
 const CardDetails = () => {
     const [favourite, setFavourite] = useState(false);
-
+    // count++;
     const chefDetails = useLoaderData();
     console.log(chefDetails);
 
@@ -109,6 +108,7 @@ const CardDetails = () => {
             
             <p></p>
         </div>
+
     );
 };
 
