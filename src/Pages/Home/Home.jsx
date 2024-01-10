@@ -22,7 +22,7 @@ const Home = () => {
             </div>
 
             <div className='mycontainer mx-auto py-10'>
-                <div className=' w-4/5 mx-auto text-center'>
+                <div className='mx-auto text-center'>
                 {/* mt-[90vh] */}
                     <h2 className="md:text-5xl text-3xl font-bold mb-10 title ">Popular Chefs</h2>
 
