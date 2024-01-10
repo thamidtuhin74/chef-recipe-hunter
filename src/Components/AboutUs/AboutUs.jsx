@@ -5,7 +5,7 @@ const AboutUs = () => {
         <div className='mycontainer flex md:flex-row xsm:flex-col-reverse xsm:p-4 md:gap-[134px] py-[85px]'>
             {/* md:w-1/2 sm:w-full */}
             <div className='md:w-1/2'>
-                <img className='w-full' src="https://ibb.co/jz45Mjm" alt="about us image" />
+                <img className='w-full' src="https://i.ibb.co/hc8MWTb/images.png" alt="about us image" />
             </div>
             {/* md:w-1/2 sm:w-full */}
             <div className='md:w-1/2 align-middle'>
