@@ -60,7 +60,7 @@ const CardDetails = () => {
                 </div>
                 
             </div>
-        <div className='container mx-auto'>
+        <div className='mycontainer mx-auto'>
             <div className="overflow-x-auto w-full ">
                 <table className="table w-full">
                     {/* head */}

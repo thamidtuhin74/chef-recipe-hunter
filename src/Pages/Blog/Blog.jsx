@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container mx-auto grid md:grid-cols-2 p-4 gap-6 py-16'>
+        <div className='mycontainer mx-auto grid md:grid-cols-2 p-4 gap-6 py-16'>
             <div className="qun-ans bg-yellow-100 p-5 rounded-lg">
                 <h2 className='pb-4'>Difference between uncontrolled and controlled components</h2>
                 <p>
