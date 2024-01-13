@@ -55,9 +55,9 @@ p{
 
 .yellowBtn{
     display: flex;
-    width: 225px;
+    /* width: 225px; */
     height: 55px;
-    padding: 20px 31px;
+    padding: 20px 55px;
     margin: 30px 0px;
     justify-content: space-between;
     align-items: center;
@@ -74,12 +74,12 @@ p{
 
 .smallYellowBtn{
     display: flex;
-    width: 127.094px;
+    width: 115px;
     height: 40px;
-    padding: 4px;
+    padding: 6px 0px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
     border-radius: 20px;
     background: #E6E600;
     color: #007500;
@@ -89,6 +89,21 @@ p{
 
     color: #E6E600;
     background: #007500;
+}
+
+.greenBtn{
+    display: flex;
+    /* width: 225px; */
+    height: 55px;
+    padding: 20px 55px;
+    margin: 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center !important;
+    flex-shrink: 0;
+    border-radius: 33.991px;
+    background: #007500;
+    color: #fff;
 }
 
 .logo{
