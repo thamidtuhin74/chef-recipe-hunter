@@ -4,6 +4,7 @@ import ChefCard from '../../Components/ChefCard/ChefCard';
 import Hero from './Hero/Hero';
 // import AboutUss from '../../Components/AboutUs/AboutUss';
 import AboutUs from '../../Components/AboutUs/AboutUs';
+import OurMenu from '../../Components/OurMenu/OurMenu';
 // import AboutUs from '../../Components/AboutUs/AboutUs';
 // let count = 0;
 
@@ -41,6 +42,7 @@ const Home = () => {
             </div>
 
             <AboutUs></AboutUs>
+            <OurMenu></OurMenu>
 
             
                 
