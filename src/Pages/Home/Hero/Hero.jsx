@@ -2,8 +2,9 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <div className='h-[550px]'>
-            <div className="hero w-full absolute z-0 " style={{ backgroundImage: `url("https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`}}>
+        // h-[550px]
+        <div className='h-[820px]'>
+            <div className="hero w-full h-full z-0 bg-[url('https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover">
                 <div className="hero-overlay bg-opacity-20"></div>
                 <div className="hero-content text-neutral-content pt-[150px]">
                     <div className="max-w-[740px]">

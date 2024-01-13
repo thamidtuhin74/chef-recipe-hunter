@@ -8,7 +8,7 @@ const ChefCard = ({chef}) => {
     
     return (
         <div>
-            <div className="card w-full !py-5 flex align-middle items-center bg-base-200 shadow-lg ">
+            <div className="card md:w-full w-[300px] !py-5 flex align-middle items-center bg-base-200 shadow-lg ">
                 <div className=''>
                     <figure className="w-[200px] h-[250px] pt-12 mask mask-decagon">
                         <img src={chef.img}  alt="Shoes" className="w-full h-full" />

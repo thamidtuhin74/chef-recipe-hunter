@@ -14,20 +14,21 @@ const Home = () => {
     // console.log(chefs);
     return (
         <div className=''>
-            <Hero></Hero>
-
-            <div className="div">
-                {/* <AboutUs></AboutUs> */}
-                {/* <AboutUs></AboutUs> */}
-                {/* <AboutUss> */}
+            <div>
+                <Hero></Hero>
             </div>
 
-            <div className='mycontainer mx-auto py-10'>
+
+            <div className='mycontainer h-auto mx-auto py-10'>
                 <div className='mx-auto text-center'>
                 {/* mt-[90vh] */}
-                    <h2 className="md:text-5xl text-3xl font-bold mb-10 title ">Popular Chefs</h2>
+                    <div className='mb-10'>
+                        <h2 className="md:text-5xl text-3xl font-bold title ">Popular Chefs</h2>
+                        <hr className='bg-[#E6E600] pb-[2px] w-[221px] h-[2px] mt-[10px] mb-[74.99px] mx-auto'/>
+                    </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-8  ">
+
+                    <div className="grid items-center grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-8  ">
                         
 
                         {
