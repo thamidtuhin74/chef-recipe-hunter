@@ -5,6 +5,7 @@ import Hero from './Hero/Hero';
 // import AboutUss from '../../Components/AboutUs/AboutUss';
 import AboutUs from '../../Components/AboutUs/AboutUs';
 import OurMenu from '../../Components/OurMenu/OurMenu';
+import ReveiwSection from '../../Components/ReveiwSection/ReveiwSection';
 // import AboutUs from '../../Components/AboutUs/AboutUs';
 // let count = 0;
 
@@ -44,6 +45,7 @@ const Home = () => {
 
             <AboutUs></AboutUs>
             <OurMenu></OurMenu>
+            <ReveiwSection></ReveiwSection>
 
             
                 
