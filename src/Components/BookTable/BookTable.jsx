@@ -7,8 +7,8 @@ const BookTable = () => {
             <div className='mycontainer pt-[70px]'>
             {/* md:px-[100px] xsm:px[50px] */}
                 <div className='max-w-[995px] px-[30px] lg:px[100px] mx-auto !text-center'>
-                    <h2 className='title'>Our Menu</h2>
-                    <p className='paragraph'>Lörem ipsum obäs tönutiktiga synade, ödleplåster, var. Tejåvis krofåsm fev, sped trafficking. Fronta pren beling, myktigt.</p>
+                    <h2 className='title'>book your table</h2>
+                    <p className='paragraph'>chicken is one of the wholesome foods that man can eat in fact people have been eating chicken throughout human.</p>
                     <hr className='bg-[#E6E600] pb-[2px] w-[221px] h-[2px] mt-[30px] mb-[74.99px] mx-auto'/>
                 </div>
 
