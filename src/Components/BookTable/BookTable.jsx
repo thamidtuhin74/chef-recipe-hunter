@@ -1,7 +1,7 @@
 import React from 'react';
-import MenuCard from './MenuCard';
+import ContactForm from './ContactForm';
 
-const OurMenu = () => {
+const BookTable = () => {
     return (
         <div className='bg-[#E3F988] h-[auto]'>
             <div className='mycontainer pt-[70px]'>
@@ -13,17 +13,18 @@ const OurMenu = () => {
                 </div>
 
                 <div className=''>
-                    <MenuCard></MenuCard>
+                    {/* <MenuCard></MenuCard> */}
+                    <ContactForm></ContactForm>
                     
                 </div>
-                <div className='flex justify-center mt-5 pb-[26px]'>
+                {/* <div className='flex justify-center mt-5 pb-[26px]'>
                     <button className='btn greenBtn !text-center'>explore menu</button>
 
-                </div>
+                </div> */}
             </div>
             
         </div>
     );
 };
 
-export default OurMenu;
+export default BookTable;

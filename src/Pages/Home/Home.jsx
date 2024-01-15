@@ -6,6 +6,7 @@ import Hero from './Hero/Hero';
 import AboutUs from '../../Components/AboutUs/AboutUs';
 import OurMenu from '../../Components/OurMenu/OurMenu';
 import ReveiwSection from '../../Components/ReveiwSection/ReveiwSection';
+import BookTable from '../../Components/BookTable/BookTable';
 // import AboutUs from '../../Components/AboutUs/AboutUs';
 // let count = 0;
 
@@ -43,9 +44,10 @@ const Home = () => {
                 </div>
             </div>
 
-            <AboutUs></AboutUs>
             <OurMenu></OurMenu>
+            <AboutUs></AboutUs>
             <ReveiwSection></ReveiwSection>
+            <BookTable></BookTable>
 
             
                 
