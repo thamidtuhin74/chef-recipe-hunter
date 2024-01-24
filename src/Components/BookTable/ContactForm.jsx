@@ -1,9 +1,14 @@
 import React from 'react';
 
 const ContactForm = () => {
+
+    const handleContactForm = (e) =>{
+        console.log("Submit");
+
+    }
+
     return (
-        <div className=''>
-            <label className="form-control max-w-[995px] mx-auto grid grid-cols-1 gap-10">
+            <form className="form-control max-w-[995px] mx-auto grid grid-cols-1 gap-10" onSubmit={handleContactForm}>
                 
                 <input type="text" placeholder="Your Name" className="input input-bordered w-full max-w-full" />
 
@@ -33,8 +38,7 @@ const ContactForm = () => {
 
                 
 
-            </label>
-        </div>
+            </form>
     );
 };
 
