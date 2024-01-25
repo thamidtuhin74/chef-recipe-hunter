@@ -4,6 +4,8 @@ const ContactForm = () => {
 
     const handleContactForm = (e) =>{
         console.log("Submit");
+        console.log("Submit");
+
 
     }
 
