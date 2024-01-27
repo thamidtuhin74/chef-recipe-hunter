@@ -5,11 +5,23 @@ const ContactForm = () => {
     const handleContactForm = (event) =>{
         event.preventDefault();
         const from = event.target;
-        console.log(from.name.value);
-        console.log(from.name.value);
+        const name = from.name.value;
+        const email = from.email.value;
+        const phone = from.phone.value;
+        const noOfPerson = from.noOfPerson.value;
+        const date = from.date.value;
+        const time = from.time.value;
+        const sms = from.sms.value;
 
-        console.log("Submit");
+        const fromData = {name, email, phone ,noOfPerson, date, time, sms}
 
+
+
+        // console.log(name, email, phone ,noOfPerson, date, time, sms);
+
+        console.log(fromData);
+
+        
 
     }
 
@@ -23,7 +35,7 @@ const ContactForm = () => {
                 <div className='grid grid-cols-2 gap-[15px]'>
                     <input type="text" name="phone" placeholder="Your Phone Number" className="input input-bordered" />
                     
-                    <input type="text" name="no-of-person" placeholder="Numbers Of Person" className="input input-bordered" />
+                    <input type="text" name="noOfPerson" placeholder="Numbers Of Person" className="input input-bordered" />
                 </div>
 
                 <div className='grid grid-cols-2 gap-[15px]'>
