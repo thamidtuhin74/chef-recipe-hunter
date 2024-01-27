@@ -22,7 +22,8 @@ const ContactForm = () => {
         console.log(fromData);
 
         if(fromData){
-            alert("Send Your Response! We will contact you ASAP")
+            alert("Send Your Response! We will contact you ASAP");
+            from.reset();
         }
 
         
