@@ -53,11 +53,11 @@ const ContactForm = () => {
                 <textarea placeholder="Your Message" name="sms" className="input input-bordered w-full max-w-full"></textarea>
                 {/* <button>Sunmit</button> */}
 
-                {/* <div className='flex justify-center pb-[26px]'>
+                <div className='flex justify-center pb-[26px]'>
                     <input type="submit" placeholder="Time" className="input input-bordered btn greenBtn !text-center" />
 
-                </div> */}
-                <input type="submit" className="input input-bordered btn greenBtn !text-center" />
+                </div>
+                {/* <input type="submit" className="input input-bordered btn greenBtn !text-center" /> */}
 
 
                 
