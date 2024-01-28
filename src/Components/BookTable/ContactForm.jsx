@@ -16,15 +16,30 @@ const ContactForm = () => {
         const fromData = {name, email, phone ,noOfPerson, date, time, sms}
 
 
-
+        fetch('http://localhost:3000/booking-response',{
+            method: 'POST',
+            headers: {
+                'content-type':'application/json'
+            },
+            body: JSON.stringify(fromData)
+            })
+            .then(res=> res.json())
+            .then(data => {
+                console.log(data);
+                // .insertedId
+                if(data){
+                alert('Thank You! Your booking request was accepted.');
+                from.reset();
+                }
+            })
         // console.log(name, email, phone ,noOfPerson, date, time, sms);
 
         console.log(fromData);
 
-        if(fromData){
-            alert("Send Your Response! We will contact you ASAP");
-            from.reset();
-        }
+        // if(fromData){
+        //     alert("Send Your Response! We will contact you ASAP");
+        //     from.reset();
+        // }
 
         
 
