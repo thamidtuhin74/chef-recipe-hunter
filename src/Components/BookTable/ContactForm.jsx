@@ -16,7 +16,7 @@ const ContactForm = () => {
         const fromData = {name, email, phone ,noOfPerson, date, time, sms}
 
 
-        fetch('http://localhost:3000/booking-response',{
+        fetch('https://chef-recipe-hunter-server-thamidtuhin74.vercel.app/booking-response',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'
